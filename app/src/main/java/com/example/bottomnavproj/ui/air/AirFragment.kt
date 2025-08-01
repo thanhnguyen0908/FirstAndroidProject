@@ -16,9 +16,7 @@ import com.example.bottomnavproj.data.model.Record
 
 class AirFragment : Fragment() {
 
-    private var _binding: FragmentAirBinding? = null
-
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentAirBinding
 
     private val viewModel: RecordListViewModel by viewModels()
 
@@ -45,7 +43,7 @@ class AirFragment : Fragment() {
 
 
         // Inflate the layout for the fragment
-        _binding = FragmentAirBinding.inflate(layoutInflater)
+        binding = FragmentAirBinding.inflate(layoutInflater)
 
         return binding.root
     }
@@ -74,10 +72,5 @@ class AirFragment : Fragment() {
 
     private fun addMoreRecord() {
         viewModel.addNewRecord()
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

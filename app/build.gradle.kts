@@ -42,6 +42,8 @@ android {
 }
 
 dependencies {
+    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("androidx.datastore:datastore-preferences:1.1.7")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.core:core:1.12.0")
     implementation("androidx.activity:activity:1.8.0")
@@ -49,6 +51,9 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
