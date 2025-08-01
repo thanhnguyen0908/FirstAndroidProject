@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_123">ABC 123</string>
+    <string name="abc_456">ABC 456</string>
+    <string name="info_edit_screen">Info Edit Screen</string>
+</resources>

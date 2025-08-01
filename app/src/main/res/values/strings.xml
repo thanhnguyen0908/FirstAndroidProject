@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BottomNavProj</string>
+    <string name="air">Air</string>
+    <string name="algriculture">Algriculture</string>
+    <string name="abc_123">ABC 123</string>
+    <string name="abc_456">ABC 456</string>
+    <string name="sample_img">Sample Img</string>
+    <string name="info_edit_screen">Info Edit Screen</string>
+    <string name="to_edit_info">To Edit Info</string>
+    <string name="title">Title</string>
+    <string name="distance">Distance</string>
+    <string name="date">Date</string>
+    <string name="enter_distance">Enter distance</string>
+    <string name="enter_date">Enter date</string>
+    <string name="save_record">Save Record</string>
+    <string name="add_more_record">Add More Record</string>
+    <string name="delete">Delete</string>
+</resources>
