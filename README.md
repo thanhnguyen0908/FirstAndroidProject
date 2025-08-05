@@ -17,6 +17,7 @@
 This project follows MVVM pattern
 
 ## Basic Components:
+- Updated App Icon
 - Animated SplashScreen
 - A bottom tab with 2 items, each item in the tab leads to a different screen, with different status bar items' color
 - The 2 fragments serve as those 2 screens, and they are included in the MainActivity layout
