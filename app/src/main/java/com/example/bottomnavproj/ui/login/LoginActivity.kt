@@ -8,7 +8,7 @@ import android.text.TextWatcher
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.bottomnavproj.MainActivity
+import com.example.bottomnavproj.ui.home.HomeActivity
 import com.example.bottomnavproj.databinding.ActivityLoginBinding
 import kotlinx.coroutines.launch
 
@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 TokenStorage.saveToken(this@LoginActivity, "TOKEN_HERE")
                 // After token is saved, navigate to MainActivity
-                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
                 finish() // Finish LoginActivity to avoid going back to it
             }
         }

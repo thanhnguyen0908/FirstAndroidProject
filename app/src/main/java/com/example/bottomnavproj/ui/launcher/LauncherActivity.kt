@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.example.bottomnavproj.MainActivity
+import com.example.bottomnavproj.ui.home.HomeActivity
 import com.example.bottomnavproj.ui.login.LoginActivity
 
 class LauncherActivity : AppCompatActivity() {
@@ -24,7 +24,7 @@ class LauncherActivity : AppCompatActivity() {
         viewModel.navigateTo.observe(this) { target ->
             val intent = Intent(this, when (target) {
                 LauncherViewModel.NavigationTarget.Login -> LoginActivity::class.java
-                LauncherViewModel.NavigationTarget.Main -> MainActivity::class.java
+                LauncherViewModel.NavigationTarget.Home -> HomeActivity::class.java
             })
             startActivity(intent)
             finish()

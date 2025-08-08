@@ -13,7 +13,7 @@ class LauncherViewModel(application: Application) : AndroidViewModel(application
 
     sealed class NavigationTarget {
         data object Login : NavigationTarget()
-        data object Main : NavigationTarget()
+        data object Home : NavigationTarget()
     }
 
     private val _navigateTo = MutableLiveData<NavigationTarget>()
@@ -29,7 +29,7 @@ class LauncherViewModel(application: Application) : AndroidViewModel(application
             _navigateTo.value = if (token.isNullOrEmpty()) {
                 NavigationTarget.Login
             } else {
-                NavigationTarget.Main
+                NavigationTarget.Home
             }
 
             isReady.value = true

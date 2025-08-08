@@ -1,4 +1,4 @@
-package com.example.bottomnavproj
+package com.example.bottomnavproj.ui.home
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,12 +8,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.commit
+import com.example.bottomnavproj.R
 import com.example.bottomnavproj.databinding.ActivityMainBinding
 import com.example.bottomnavproj.ui.agriculture.AgricultureFragment
 import com.example.bottomnavproj.ui.air.AirFragment
 import com.google.android.material.navigation.NavigationBarView
 
-class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
+class HomeActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
     private val airFragment = AirFragment()
